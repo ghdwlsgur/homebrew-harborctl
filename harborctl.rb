@@ -10,7 +10,7 @@ class Harborctl < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/ghdwlsgur/harborctl/releases/download/v1.0.1/harborctl_1.0.1_Darwin_arm64.tar.gz"
-      sha256 "e24111fe58ca2cd75f7de88aadb7560be1e845ce224a2d0e8ebc25acfd81c33b"
+      sha256 "5c9574b80b25470db99cc3743c54e3d399105ba311c6f0ebdcf3265bad36dc70"
 
       def install
         bin.install "harborctl"
@@ -18,7 +18,7 @@ class Harborctl < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/ghdwlsgur/harborctl/releases/download/v1.0.1/harborctl_1.0.1_Darwin_x86_64.tar.gz"
-      sha256 "491f2cd72ac7a45314d34dcbe91806b0d49dd0227af0af9ffc61b0014a212629"
+      sha256 "d9b8a024bd81ee46ed5d58eaea91830646c5b20ee393138fca54c5df0f538c96"
 
       def install
         bin.install "harborctl"
@@ -29,7 +29,7 @@ class Harborctl < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ghdwlsgur/harborctl/releases/download/v1.0.1/harborctl_1.0.1_Linux_arm64.tar.gz"
-      sha256 "3546a3d240c3389ddab286f9a5a8e9820cb4646ec604905c2ae14bff4bc6d805"
+      sha256 "7d31644719ffa88396126ac7a4d097998e740bb6782820cae4aa69ac9b80cccb"
 
       def install
         bin.install "harborctl"
@@ -37,7 +37,7 @@ class Harborctl < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/ghdwlsgur/harborctl/releases/download/v1.0.1/harborctl_1.0.1_Linux_x86_64.tar.gz"
-      sha256 "36686afd2137eb6d26855d2fe4f879de198b04a456dc298676fcf2f8814c6e75"
+      sha256 "ca5a50563b659196aae8be1956634fcd9d897371e735f5a306fd1921ef63ebb7"
 
       def install
         bin.install "harborctl"
