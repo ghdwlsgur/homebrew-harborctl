@@ -5,20 +5,20 @@
 class Harborctl < Formula
   desc "it is a cli client tool for managing harbor robot accounts."
   homepage "https://github.com/ghdwlsgur/harborctl"
-  version "1.0.1"
+  version "1.0.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ghdwlsgur/harborctl/releases/download/v1.0.1/harborctl_1.0.1_Darwin_arm64.tar.gz"
-      sha256 "64c225b3b014a49c5b41e39d1cc48a4e41a7a03493d6dc3acc3a12f507de50e5"
+      url "https://github.com/ghdwlsgur/harborctl/releases/download/v1.0.2/harborctl_1.0.2_Darwin_arm64.tar.gz"
+      sha256 "3103652706339dfda0b3bef46b90a7bec6df0911a74c424b9d822d7a2a73351d"
 
       def install
         bin.install "harborctl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ghdwlsgur/harborctl/releases/download/v1.0.1/harborctl_1.0.1_Darwin_x86_64.tar.gz"
-      sha256 "6e258bfa12a3612ddd6b0a91135dba2543f27cf36bb0e62c34afef1ee0e4728b"
+      url "https://github.com/ghdwlsgur/harborctl/releases/download/v1.0.2/harborctl_1.0.2_Darwin_x86_64.tar.gz"
+      sha256 "ccbe4622b5906ecdcd29b669a80676c020d1545003833990e54064a91f1c6ef6"
 
       def install
         bin.install "harborctl"
@@ -28,16 +28,16 @@ class Harborctl < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ghdwlsgur/harborctl/releases/download/v1.0.1/harborctl_1.0.1_Linux_arm64.tar.gz"
-      sha256 "f0e34572de7a8b9a78b7e180652398036e012a08515c0e60730bf63ffb3afb4b"
+      url "https://github.com/ghdwlsgur/harborctl/releases/download/v1.0.2/harborctl_1.0.2_Linux_arm64.tar.gz"
+      sha256 "602f8e376062007167fae6a0374237d7d5eee8a9b9503320e94ed5920dfd2a1a"
 
       def install
         bin.install "harborctl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ghdwlsgur/harborctl/releases/download/v1.0.1/harborctl_1.0.1_Linux_x86_64.tar.gz"
-      sha256 "7861f59d34afe7794999352ab0067a3a0b39deb8a4e4f7759ae8f4f63a3a155a"
+      url "https://github.com/ghdwlsgur/harborctl/releases/download/v1.0.2/harborctl_1.0.2_Linux_x86_64.tar.gz"
+      sha256 "50eb93f261600b48fdd33e3865c69de4bbabbba2cd1b6c2646ddd67e61321077"
 
       def install
         bin.install "harborctl"
